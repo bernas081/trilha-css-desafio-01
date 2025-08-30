@@ -1,0 +1,291 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+.banner {
+    background: url('../imagens/FC_Bayern_München_logo_(2024).svg') no-repeat center center/cover; 
+    color: #0c0c0c;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.banner-content .logo img {
+    max-width: 160px; 
+    margin-bottom: 20px;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content .button button {
+    background-color: #4b4949; /* Vermelho mais vibrante do Bayern */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+main {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #2a2a2a;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #f7f5f5; /* Cor do título para as seções */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.modules-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.module {
+    background-color: #383838;
+    padding: 20px;
+    border-left: 5px solid #ffffff;
+    border-radius: 5px;
+    width: calc(33% - 20px); /* Para 3 colunas em telas maiores */
+    box-sizing: border-box;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.module span {
+    color: #ff007f; /* Cor do "Módulo 01:" */
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Nova seção de informações do Bayern */
+#about-bayern {
+    padding: 40px;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+#about-bayern h2, #about-bayern h3 {
+    color: #d60027;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about-bayern p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos para Tópicos de CSS3 */
+#css-topics {
+    padding: 40px 0;
+    background-color: #2a2a2a;
+    color: #fff;
+    text-align: center;
+}
+
+#css-topics h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #d60027; /* Cor do título para esta seção */
+}
+
+.topics-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.topics-list li {
+    background-color: #383838;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #d60027; /* Linha lateral vermelha */
+}
+
+.topics-list li::before {
+    content: "▶";
+    color: #ff007f;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.topics-list li:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+#transform-world {
+    background: linear-gradient(to right, #d60027, #8c0000); /* Gradiente de cores do Bayern */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#professional-challenges {
+    text-align: center;
+}
+
+#professional-challenges img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+footer .dio-logo {
+    max-width: 100px; /* Ajuste o tamanho do logo do rodapé */
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #d60027;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2.2em;
+    }
+
+    .banner-content p {
+        font-size: 1em;
+    }
+
+    .modules-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .module {
+        width: 90%; /* Ocupa mais largura em telas menores */
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    #css-topics h2 {
+        font-size: 2em;
+    }
+
+    .topics-list {
+        padding: 0 20px;
+    }
+
+    .topics-list li {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 1.8em;
+    }
+
+    .banner-content p {
+        font-size: 0.9em;
+    }
+
+    .banner-content .button button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    #css-topics h2 {
+        font-size: 1.8em;
+    }
+
+    .topics-list li {
+        font-size: 0.9em;
+        padding: 10px 12px;
+    }
+
+    #transform-world {
+        font-size: 1.5em;
+        padding: 40px 15px;
+    }
+}
